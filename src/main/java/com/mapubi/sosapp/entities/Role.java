@@ -36,9 +36,6 @@ public class Role implements Serializable {
     private Date modified;
     @Column(nullable = false)
     private int state;
-    @OneToOne
-    @JoinColumn(nullable = false)
-    private Administrator creator;
 
     public String getName() {
         return name;
@@ -78,14 +75,6 @@ public class Role implements Serializable {
 
     public void setState(int state) {
         this.state = state;
-    }
-
-    public Administrator getCreator() {
-        return creator;
-    }
-
-    public void setCreator(Administrator creator) {
-        this.creator = creator;
     }
     
 
