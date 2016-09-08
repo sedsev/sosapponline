@@ -1,6 +1,7 @@
 package com.mapubi.sosapp.entities;
 
 import java.io.Serializable;
+
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
@@ -9,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -38,10 +40,12 @@ public class Account implements Serializable {
     @OneToOne
     @JoinColumn(nullable = false)
     private AccountType type;
+    @ManyToMany
     private List<SOSEventType> eventTypes;
     @OneToOne
     @JoinColumn(nullable = false)
     private SOSLocation location;
+    @OneToOne
     private ServiceDescription service;
 
     public Date getCreated() {

@@ -49,6 +49,7 @@ public class SOSUser implements Serializable {
     private Date dateOfBirth;
     @Column(nullable = false, length = 12)
     private String sex;
+    @OneToMany
     private List<Role> roles;
 
     public String getUserName() {
