@@ -11,6 +11,13 @@ public class DescriptionElementJobImpl implements DescriptionElementJob {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public DescriptionElement merge(DescriptionElement descriptionElement) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 	@Override
 	public List<DescriptionElement> listAll() {

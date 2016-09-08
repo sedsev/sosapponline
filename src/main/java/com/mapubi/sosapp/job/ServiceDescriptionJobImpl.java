@@ -11,6 +11,12 @@ public class ServiceDescriptionJobImpl implements ServiceDescriptionJob {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public ServiceDescription merge(ServiceDescription serviceDescription) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	@Override
 	public List<ServiceDescription> listAll() {

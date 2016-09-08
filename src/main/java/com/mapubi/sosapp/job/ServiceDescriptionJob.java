@@ -6,6 +6,7 @@ import com.mapubi.sosapp.entities.ServiceDescription;
 
 public interface ServiceDescriptionJob {
 	public ServiceDescription save(ServiceDescription serviceDescription);
+	public ServiceDescription merge(ServiceDescription serviceDescription);
 	public List<ServiceDescription> listAll();
 	public void remove(ServiceDescription serviceDescription);
 }

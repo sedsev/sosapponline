@@ -13,6 +13,12 @@ public class SOSEventJobImpl implements SOSEventJob {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public SOSEvent merge(SOSEvent alert) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	@Override
 	public List<SOSEvent> listAll() {

@@ -6,6 +6,7 @@ import com.mapubi.sosapp.entities.Administrator;
 
 public interface AdministratorJob {
 	public Administrator save(Administrator administrator);
+	public Administrator merge(Administrator administrator);
 	public List<Administrator> listAll();
 	public void remove(Administrator administrator);
 }

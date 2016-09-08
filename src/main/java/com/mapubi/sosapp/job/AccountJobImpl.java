@@ -19,6 +19,12 @@ public class AccountJobImpl implements AccountJob{
 		// TODO Auto-generated method stub
 		return accountRepository.save(account);
 	}
+	
+	@Override
+	public Account merge(Account account) {
+		// TODO Auto-generated method stub
+		return accountRepository.save(account);
+	}
 
 	@Override
 	public List<Account> listAll() {

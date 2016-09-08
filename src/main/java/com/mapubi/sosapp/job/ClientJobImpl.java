@@ -11,6 +11,12 @@ public class ClientJobImpl implements ClientJob {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public Client merge(Client client) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	@Override
 	public List<Client> listAll() {

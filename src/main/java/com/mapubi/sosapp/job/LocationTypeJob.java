@@ -6,6 +6,7 @@ import com.mapubi.sosapp.entities.LocationType;
 
 public interface LocationTypeJob {
 	public LocationType save(LocationType type);
+	public LocationType merge(LocationType type);
 	public List<LocationType> listAll();
 	public void remove(LocationType type);
 }

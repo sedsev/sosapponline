@@ -11,6 +11,12 @@ public class AccountTypeJobImpl implements AccountTypeJob {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public AccountType merge(AccountType accountType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 	@Override
 	public List<AccountType> listAll() {

@@ -8,6 +8,7 @@ import com.mapubi.sosapp.entities.SOSUser;
 
 public interface SOSEventJob {
 	public SOSEvent save(SOSEvent alert);
+	public SOSEvent merge(SOSEvent alert);
 	public List<SOSEvent> listAll();
 	public boolean notifyAccount(Account account);
 	public boolean notifyAllAccount();

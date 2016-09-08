@@ -6,6 +6,7 @@ import com.mapubi.sosapp.entities.DynamicLocation;
 
 public interface DynamicLocationJob {
 	public DynamicLocation save(DynamicLocation location);
+	public DynamicLocation merge(DynamicLocation location);
 	public List<DynamicLocation> listAll();
 	public void remove(DynamicLocation location);
 }

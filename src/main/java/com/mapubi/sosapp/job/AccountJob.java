@@ -8,4 +8,5 @@ public interface AccountJob {
 	public Account save(Account account);
 	public List<Account> listAll();
 	public void remove(Account account);
+	public Account merge(Account account);
 }

@@ -11,6 +11,12 @@ public class AdministratorJobImpl implements AdministratorJob {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public Administrator merge(Administrator administrator) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	@Override
 	public List<Administrator> listAll() {
