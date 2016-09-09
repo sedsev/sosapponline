@@ -25,6 +25,7 @@ public class SOSUserRest {
 		return roleJob.merge(user);
 	}
 
+	@RequestMapping(value="/sosuser/list", method=RequestMethod.GET)
 	public List<SOSUser> listAll() {
 		return roleJob.listAll();
 	}

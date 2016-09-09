@@ -30,6 +30,8 @@ public class Client implements Serializable {
     private String name;
     @Column(length = 160, nullable = false, unique = true)
     private String email;
+    @Column(length = 20, nullable = false, unique = true)
+    private String phoneNumber;
     @Temporal(TemporalType.TIMESTAMP)
     @Column(nullable = false)
     private Date created;

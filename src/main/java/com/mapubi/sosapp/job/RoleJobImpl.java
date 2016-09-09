@@ -19,6 +19,7 @@ public class RoleJobImpl implements RoleJob {
 	public Role save(Role role) {
 		// TODO Auto-generated method stub
 		role.setCreated(new Date());
+		role.setState(1);
 		return roleRepository.save(role);
 	}
 

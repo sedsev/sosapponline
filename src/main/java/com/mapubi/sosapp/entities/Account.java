@@ -32,6 +32,7 @@ public class Account implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     @Column(nullable = false)
     private Date created;
+    private String contact;
     @Temporal(TemporalType.TIMESTAMP)
     @Column(nullable = false)
     private Date modified;
@@ -51,8 +52,22 @@ public class Account implements Serializable {
     public Date getCreated() {
         return created;
     }
+    
+    
 
-    public void setCreated(Date created) {
+    public String getContact() {
+		return contact;
+	}
+
+
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+
+
+	public void setCreated(Date created) {
         this.created = created;
     }
 

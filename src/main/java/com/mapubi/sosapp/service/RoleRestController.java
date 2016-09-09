@@ -16,17 +16,17 @@ public class RoleRestController {
 	@Autowired
 	private RoleJob roleJob;
 	
-	@RequestMapping(value="/role/create", method=RequestMethod.POST)
+	@RequestMapping(value="/roles/create", method=RequestMethod.POST)
 	public Role save(@RequestBody Role role) {
 		return roleJob.save(role);
 	}
 
-	@RequestMapping(value="/role/update", method=RequestMethod.PUT)
+	@RequestMapping(value="/roles/update", method=RequestMethod.PUT)
 	public Role merge(@RequestBody Role role) {
 		return roleJob.merge(role);
 	}
 	
-	@RequestMapping(value="/role/list", method=RequestMethod.GET)
+	@RequestMapping(value="/roles/list", method=RequestMethod.GET)
 	public List<Role> listAll() {
 		return roleJob.listAll();
 	}

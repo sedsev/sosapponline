@@ -1,5 +1,6 @@
 package com.mapubi.sosapp.job;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ public class SOSUserJobImpl implements SOSUserJob {
 	@Override
 	public SOSUser merge(SOSUser user) {
 		// TODO Auto-generated method stub
+		user.setDateOfBirth(new Date());
 		return sosUserRepository.save(user);
 	}
 

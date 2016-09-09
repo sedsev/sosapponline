@@ -16,17 +16,17 @@ public class AccountRestController {
 	@Autowired
 	private AccountJob accountJob;
 	
-	@RequestMapping(value="/clients/create", method=RequestMethod.POST)
+	@RequestMapping(value="/account/create", method=RequestMethod.POST)
 	public Account save(@RequestBody Account account) {
 		return accountJob.save(account);
 	}
 	
-	@RequestMapping(value="/clients/list", method=RequestMethod.GET)
+	@RequestMapping(value="/account/list", method=RequestMethod.GET)
 	public List<Account> listAll() {
 		return accountJob.listAll();
 	}
 	
-	@RequestMapping(value="/clients/delete", method=RequestMethod.GET)
+	@RequestMapping(value="/account/delete", method=RequestMethod.GET)
 	public void remove(@RequestBody Account account) {
 		accountJob.remove(account);
 	}

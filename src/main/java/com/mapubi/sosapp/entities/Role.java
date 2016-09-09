@@ -110,6 +110,19 @@ public class Role implements Serializable {
     public String toString() {
         return "com.smacomit.sosapp.job.Role[ id=" + id + " ]";
     }
+
+	public Role() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Role(String name, String description) {
+		super();
+		this.name = name;
+		this.description = description;
+	}
+    
+    
     
 }
 
